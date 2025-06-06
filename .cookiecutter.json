@@ -1,0 +1,30 @@
+{
+    "cookiecutter": {
+        "codeowner_github_usernames": "emdeefive",
+        "full_name": "emdeefive",
+        "email": "daniel.large@networktocode.com",
+        "github_org": "emdeefive",
+        "app_name": "nautobot_app_power_plant",
+        "verbose_name": "Nautobot App Power Plant",
+        "app_slug": "nautobot-app-power-plant",
+        "project_slug": "nautobot-app-nautobot-app-power-plant",
+        "repo_url": "https://github.com/emdeefive/nautobot-app-nautobot-app-power-plant",
+        "base_url": "nautobot-app-power-plant",
+        "min_nautobot_version": "2.0.0",
+        "max_nautobot_version": "2.9999",
+        "camel_name": "NautobotAppPowerPlant",
+        "project_short_description": "Nautobot App Power Plant",
+        "model_class_name": "NautobotAppPowerPlantExampleModel",
+        "open_source_license": "Apache-2.0",
+        "docs_base_url": "https://docs.nautobot.com",
+        "docs_app_url": "https://docs.nautobot.com/projects/nautobot-app-power-plant/en/latest",
+        "_extensions": [
+            "local_extensions.camel_case_to_kebab",
+            "local_extensions.camel_case_to_words"
+        ],
+        "_template": "https://github.com/nautobot/cookiecutter-nautobot-app",
+        "_output_dir": "/Users/dlarge/dev/cookiecutter-nautobot-app/outputs",
+        "_repo_dir": "/Users/dlarge/.cookiecutters/cookiecutter-nautobot-app/nautobot-app",
+        "_checkout": null
+    }
+}
