@@ -6,11 +6,11 @@ from nautobot_app_power_plant import models
 from nautobot_app_power_plant.tests import fixtures
 
 
-class NautobotAppPowerPlantExampleModelViewTest(ViewTestCases.PrimaryObjectViewTestCase):
+class UPSModelViewTest(ViewTestCases.PrimaryObjectViewTestCase):
     # pylint: disable=too-many-ancestors
-    """Test the NautobotAppPowerPlantExampleModel views."""
+    """Test the UPSModel views."""
 
-    model = models.NautobotAppPowerPlantExampleModel
+    model = models.UPSModel
     bulk_edit_data = {"description": "Bulk edit views"}
     form_data = {
         "name": "Test 1",

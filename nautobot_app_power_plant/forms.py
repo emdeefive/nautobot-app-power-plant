@@ -6,20 +6,20 @@ from nautobot.apps.forms import NautobotBulkEditForm, NautobotFilterForm, Nautob
 from nautobot_app_power_plant import models
 
 
-class NautobotAppPowerPlantExampleModelForm(NautobotModelForm):  # pylint: disable=too-many-ancestors
-    """NautobotAppPowerPlantExampleModel creation/edit form."""
+class UPSModelForm(NautobotModelForm):  # pylint: disable=too-many-ancestors
+    """UPSModel creation/edit form."""
 
     class Meta:
         """Meta attributes."""
 
-        model = models.NautobotAppPowerPlantExampleModel
+        model = models.UPSModel
         fields = "__all__"
 
 
-class NautobotAppPowerPlantExampleModelBulkEditForm(TagsBulkEditFormMixin, NautobotBulkEditForm):  # pylint: disable=too-many-ancestors
-    """NautobotAppPowerPlantExampleModel bulk edit form."""
+class UPSModelBulkEditForm(TagsBulkEditFormMixin, NautobotBulkEditForm):  # pylint: disable=too-many-ancestors
+    """UPSModel bulk edit form."""
 
-    pk = forms.ModelMultipleChoiceField(queryset=models.NautobotAppPowerPlantExampleModel.objects.all(), widget=forms.MultipleHiddenInput)
+    pk = forms.ModelMultipleChoiceField(queryset=models.UPSModel.objects.all(), widget=forms.MultipleHiddenInput)
     description = forms.CharField(required=False)
 
     class Meta:
@@ -30,10 +30,10 @@ class NautobotAppPowerPlantExampleModelBulkEditForm(TagsBulkEditFormMixin, Nauto
         ]
 
 
-class NautobotAppPowerPlantExampleModelFilterForm(NautobotFilterForm):
+class UPSModelFilterForm(NautobotFilterForm):
     """Filter form to filter searches."""
 
-    model = models.NautobotAppPowerPlantExampleModel
+    model = models.UPSModel
     field_order = ["q", "name"]
 
     q = forms.CharField(

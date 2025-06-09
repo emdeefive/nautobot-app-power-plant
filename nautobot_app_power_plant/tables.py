@@ -6,14 +6,14 @@ from nautobot.apps.tables import BaseTable, ButtonsColumn, ToggleColumn
 from nautobot_app_power_plant import models
 
 
-class NautobotAppPowerPlantExampleModelTable(BaseTable):
+class UPSModelTable(BaseTable):
     # pylint: disable=R0903
     """Table for list view."""
 
     pk = ToggleColumn()
     name = tables.Column(linkify=True)
     actions = ButtonsColumn(
-        models.NautobotAppPowerPlantExampleModel,
+        models.UPSModel,
         # Option for modifying the default action buttons on each row:
         # buttons=("changelog", "edit", "delete"),
         # Option for modifying the pk for the action buttons:
@@ -23,7 +23,7 @@ class NautobotAppPowerPlantExampleModelTable(BaseTable):
     class Meta(BaseTable.Meta):
         """Meta attributes."""
 
-        model = models.NautobotAppPowerPlantExampleModel
+        model = models.UPSModel
         fields = (
             "pk",
             "name",

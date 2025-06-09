@@ -4,13 +4,13 @@ from nautobot.apps.ui import NavMenuAddButton, NavMenuGroup, NavMenuItem, NavMen
 
 items = (
     NavMenuItem(
-        link="plugins:nautobot_app_power_plant:nautobotapppowerplantexamplemodel_list",
-        name="Nautobot App Power Plant",
-        permissions=["nautobot_app_power_plant.view_nautobotapppowerplantexamplemodel"],
+        link="plugins:nautobot_app_power_plant:upsmodel_list",
+        name="UPS",
+        permissions=["nautobot_app_power_plant.view_upsmodel"],
         buttons=(
             NavMenuAddButton(
-                link="plugins:nautobot_app_power_plant:nautobotapppowerplantexamplemodel_add",
-                permissions=["nautobot_app_power_plant.add_nautobotapppowerplantexamplemodel"],
+                link="plugins:nautobot_app_power_plant:upsmodel_add",
+                permissions=["nautobot_app_power_plant.add_upsmodel"],
             ),
         ),
     ),

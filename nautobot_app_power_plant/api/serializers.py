@@ -5,13 +5,13 @@ from nautobot.apps.api import NautobotModelSerializer, TaggedModelSerializerMixi
 from nautobot_app_power_plant import models
 
 
-class NautobotAppPowerPlantExampleModelSerializer(NautobotModelSerializer, TaggedModelSerializerMixin):  # pylint: disable=too-many-ancestors
-    """NautobotAppPowerPlantExampleModel Serializer."""
+class UPSModelSerializer(NautobotModelSerializer, TaggedModelSerializerMixin):  # pylint: disable=too-many-ancestors
+    """UPSModel Serializer."""
 
     class Meta:
         """Meta attributes."""
 
-        model = models.NautobotAppPowerPlantExampleModel
+        model = models.UPSModel
         fields = "__all__"
 
         # Option for disabling write for certain fields:

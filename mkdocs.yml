@@ -110,7 +110,7 @@ nav:
       - Frequently Asked Questions: "user/faq.md"
       - External Interactions: "user/external_interactions.md"
       - Data Models:
-          - Nautobot App Power Plant Example Model: "models/nautobotapppowerplantexamplemodel.md"
+          - Nautobot App Power Plant Example Model: "models/nautobotapppowerplantupsmodel.md"
   - Administrator Guide:
       - Install and Configure: "admin/install.md"
       - Upgrade: "admin/upgrade.md"

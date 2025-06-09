@@ -14,7 +14,7 @@ router = NautobotUIViewSetRouter()
 
 # The standard is for the route to be the hyphenated version of the model class name plural.
 # for example, ExampleModel would be example-models.
-router.register("nautobot-app-power-plant-example-models", views.NautobotAppPowerPlantExampleModelUIViewSet)
+router.register("ups-models", views.UPSModelUIViewSet)
 
 
 urlpatterns = [

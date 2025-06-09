@@ -6,14 +6,14 @@ from nautobot_app_power_plant import filters, forms, models, tables
 from nautobot_app_power_plant.api import serializers
 
 
-class NautobotAppPowerPlantExampleModelUIViewSet(NautobotUIViewSet):
-    """ViewSet for NautobotAppPowerPlantExampleModel views."""
+class UPSModelUIViewSet(NautobotUIViewSet):
+    """ViewSet for UPSModel views."""
 
-    bulk_update_form_class = forms.NautobotAppPowerPlantExampleModelBulkEditForm
-    filterset_class = filters.NautobotAppPowerPlantExampleModelFilterSet
-    filterset_form_class = forms.NautobotAppPowerPlantExampleModelFilterForm
-    form_class = forms.NautobotAppPowerPlantExampleModelForm
+    bulk_update_form_class = forms.UPSModelBulkEditForm
+    filterset_class = filters.UPSModelFilterSet
+    filterset_form_class = forms.UPSModelFilterForm
+    form_class = forms.UPSModelForm
     lookup_field = "pk"
-    queryset = models.NautobotAppPowerPlantExampleModel.objects.all()
-    serializer_class = serializers.NautobotAppPowerPlantExampleModelSerializer
-    table_class = tables.NautobotAppPowerPlantExampleModelTable
+    queryset = models.UPSModel.objects.all()
+    serializer_class = serializers.UPSModelSerializer
+    table_class = tables.UPSModelTable
