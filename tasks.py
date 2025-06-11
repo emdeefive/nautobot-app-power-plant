@@ -52,7 +52,7 @@ namespace = Collection("nautobot_app_power_plant")
 namespace.configure(
     {
         "nautobot_app_power_plant": {
-            "nautobot_ver": "2.3.1",
+            "nautobot_ver": "2.4.9",
             "project_name": "nautobot-app-power-plant",
             "python_ver": "3.11",
             "local": False,

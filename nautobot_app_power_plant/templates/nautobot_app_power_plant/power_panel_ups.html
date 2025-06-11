@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-heading"><strong>Associated UPS</strong></div>
+    <ul class="list-group">
+        {% if ups %}
+            <li class="list-group-item">
+                <a href="{{ ups.get_absolute_url }}">{{ ups }}</a>
+            </li>
+        {% else %}
+            <li class="list-group-item">None found.</li>
+        {% endif %}
+    </ul>
+</div>

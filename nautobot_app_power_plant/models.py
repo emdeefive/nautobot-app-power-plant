@@ -47,6 +47,7 @@ class UPSModel(PowerPlantModel):
 
     ordering = ["name"]
     name = models.CharField(max_length=25, help_text="Name of UPS", unique=True)
+    power_panel = models.ForeignKey(to="dcim.PowerPanel", on_delete=models.CASCADE, help_text="Power Panel this UPS is associated with.", related_name="ups_models", null=True, blank=True)
     description = models.TextField(help_text="Description of the UPS.", blank=True)
     location = models.CharField(
         max_length=200,
